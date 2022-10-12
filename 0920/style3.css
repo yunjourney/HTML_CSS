@@ -1,0 +1,41 @@
+
+body {
+    font-family: "D2Coding", "Nanum Gothic", sans-serif;
+}
+
+/* justify : 단락 줄맞춤 정렬, center : 가운데 정렬 */
+.parent {
+    font-size: 20px;
+    color: royalblue;
+    font-weight: 900;
+    text-align: justify;
+    text-decoration: underline;
+}
+
+/* em : 부모(20px)에 비해 120% */
+.child {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: rgba(0,0,255, .3);
+    /* rgba(r,g,b,alpha값(투명도.소수점퍼센트로 표현) */
+    background-image:url("/images/beach.jpg");
+}
+
+.child:hover {
+    color: rgba(0,0,255, 1);
+}
+
+/* rem : 루트(디폴트값 : 16px) 기준에 비해 120% */
+.child-to-child {
+    font-size: 1.2rem;
+    color: #fff000;
+}
+
+/* 영문 텍스트에서 소문자는 대문자로, 대문자는 크기 크게 바꿔줌 */
+.variant {
+    font-variant: small-caps;
+}
+
+a {
+    text-decoration: none;
+}

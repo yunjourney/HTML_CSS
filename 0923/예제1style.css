@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box; /* 이거 적용해야 border-line까지 영역에 포함시켜서 픽셀 맞춰짐*/
+}
+
+a, h2, h3, input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #504444;
+    margin: 20px auto;
+}
+
+h3 {
+    color: #2c3432;
+}
+
+#container {
+    text-align: center;
+    width: 304px;
+    height: 390px;
+    border: 1px solid #bbb;
+    margin: 0 auto;
+    padding: 28px 38px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+input {
+    width: 228px;
+    height: 44px;
+    margin-bottom: 10px;
+    border: 1px solid #eaeaea;
+    padding: 0 10px;
+}
+
+.login {
+    background-color: #373f3c;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    width: 228px;
+    height: 44px;
+}
+
+.g-login {
+    background-color: #ffffff;
+    margin: auto;
+    width: 228px;
+    height: 44px;
+    border: 1px solid #373f3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.g-login img {
+    margin-right: 5px;
+}
+
+.login a {
+    color: #ffffff;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #504444;
+    font-weight: bold;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습2-아이패드 주문하기</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+        table {
+            width: 500px;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="#">
+        <div style="margin: auto; width: 60%">
+        <h1>아이패드 주문하기</h1>
+        <fieldset>
+            <legend><b>배송 정보</b></legend>
+            <table>
+                <tr>
+                    <td><label>주문 상품 </label></td>
+                    <td><input type="text" value="아이패드 12.9인치" readonly></td>
+                </tr>
+                <tr>
+                    <td><label>이름 </label></td>
+                    <td><input type="text" autofocus></td>
+                </tr>
+                <tr>
+                    <td><label>배송 주소 </label></td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td><label>이메일 </label></td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td><label>연락처 </label></td>
+                    <td><input type="tel" placeholder="하이픈 빼고 입력해 주세요.(01012345678)"></td>
+                </tr>
+                <tr>
+                    <td><label>배송 지정 </label></td>
+                    <td><input type="date">(주문일로부터 최소 3일 이후)</td>
+                </tr>
+            </table>
+        </fieldset>
+        </div>
+        <p>
+        <div style="margin: 0 auto; width: 20%;">
+            <button type="submit">주문하기</button>
+            <button type="reset">취소하기</button>
+        </div>
+        </p>
+    </form>
+</body>
+</html>

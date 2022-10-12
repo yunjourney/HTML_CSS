@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>실습</title>
+    <style>
+        * {
+            width: 600px;
+            margin: 10px auto;
+        }
+        button {
+            width: 150px;
+            height: 50px;
+            color: white;
+            border: none;
+        }
+        .green {
+            background-color: green;
+        }
+        .orange {
+            background-color: orange;
+        }
+        .purple {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <button class="green">Green</button>
+        <button class="orange">Orange</button>
+        <button class="purple">Purple</button>
+    </form>
+    <script>
+        const btn = document.querySelector("button");
+        btn.onclick = () => alert("경고!");
+    </script>
+</body>
+</html>

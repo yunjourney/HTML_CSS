@@ -1,0 +1,74 @@
+* {
+    width: 500px;
+    margin: 10px auto;  
+    box-sizing: border-box;
+}
+
+header {
+    height: 80px;
+    background-color: lightskyblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    height: 80px;
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+div {
+    font-size: 1.5em;
+}
+
+.flex-container {
+    height: calc(100vh - 160px);
+    width: 100vw;
+    background-color: aliceblue;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row; 
+    /* row : 디폴트값. 가로축으로 쌓임. 
+       column : 세로축으로 배치.
+       row(column)-reverse : 반대 순서로 쌓임. */
+    flex-wrap: wrap; 
+    /* wrap : 정해진 크기를 넘어가면 다음 행으로 넘어감. 
+       nowrap : 줄바꿈없이 아이템갯수에 맞게 최대한 컨테이너박스 크기에 맞추지만 오버되면 튀어나옴 */
+    justify-content: space-evenly;
+    /* 주축 방향으로 정렬 (direction이 row면 row방향)
+       flex-end : 끝에서부터 정렬
+       center : container 기준으로 중앙정렬
+       space-between : 주축기준 아이템 사이의 간격 동일하게 정렬 
+       space-around : 주축기준 아이템 양옆에만 균등한 값으로 정렬
+       space-evenly : 주축기준 아이템 여백 일정하게 정렬 */
+    /* align-items: center; */
+    /* 주축의 교차축 기준으로 정렬 (세로축)
+       stretch : 디폴트. 늘려서 정렬시킴 따로 지정안하면 아이템 늘려서 컨테이너에 다 채워버림 */
+}
+
+.flex-item {
+    width: 100px;
+    margin: 2px;
+    /* flex-shrink: 0; */
+    /* flex-shrink : 0 -> 아이템 크기를 건들이지 않음 */
+    border: 1px solid gray;
+    color: white;
+    background-color: lightskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2n이면 짝수만 */
+/* flex-grow: 가변, 둘다 1이면 1:1비율로 가져감, 남는 부분에 대해서 가져감 */
+.flex-item:nth-child(1) {
+    background-color: orange;
+    flex-grow: 1;
+}
+
+.flex-item:nth-child(2) {
+    flex-grow: 3;
+}

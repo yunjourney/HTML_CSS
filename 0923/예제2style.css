@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+.nanum-font {
+    font-family: 'Nanum Pen Script', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+#memo h1 {
+    font-size: 44px;
+}
+
+#memo {
+    rotate: 10deg;
+    width: 300px;
+    height: 300px;
+    background-color: #ffff99;
+    padding: 18px;
+    margin: 50px auto;
+    position: relative;
+}
+#memo:before {
+    content:'';
+    display:block;
+    position:absolute;
+    bottom:0;
+    right:0;
+    background:rgba(224, 224, 125, 0.9);
+    border-width:0 0 50px 70px;
+    border-style:solid;
+    border-color:transparent transparent #ffffff ;
+}

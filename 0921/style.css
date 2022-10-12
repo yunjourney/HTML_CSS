@@ -1,0 +1,26 @@
+
+/* letter-spacing : 자간 조정 */
+/* line-height : 텍스트 한 줄의 높이(행간)를 조정. 기본값이 1.2 */
+p {
+    letter-spacing: 20px;
+    line-height: 200%;
+}
+
+/* 텍스트에 그림자 효과 주기 */
+/* none | <가로 거리> <세로 거리> <번짐 정도> <색상> */
+h1 {
+    font-size: 50px;
+}
+.shadow1 {
+    color: orange;
+    text-shadow: -2px 1px gray;
+}
+.shadow2 {
+    color: white;
+    text-shadow: 0px 0px 9px steelblue;
+}
+.shadow3 {
+    color: slateblue;
+    text-shadow: 3px 3px 1px darkgray;
+}
+

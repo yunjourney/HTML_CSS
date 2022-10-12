@@ -1,0 +1,27 @@
+body {
+    background-color: #ddd;
+}
+
+#container {
+    display: grid;
+    gap: 1rem; /* em, rem = 16px */
+    /* grid-template-columns: repeat(auto-fit, 300px); */
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    padding: 10px;
+}
+
+.cup {
+    background-color: white;
+    box-shadow: 1px 1px 3px gray;
+    padding-left: 10px;
+    
+}
+
+.cup img {
+    width: 120px;
+}
+
+.cup p {
+    font-size: .7em;
+}

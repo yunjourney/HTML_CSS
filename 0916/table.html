@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border : 2px solid royalblue;
+        }
+        th, td {
+            border : 1px solid royalblue;
+            text-align: center;
+        }
+        th {
+            background-color: rgba(65, 105, 225, 0.452);
+        }
+        caption {
+            font-size: 1.9878em;
+        }
+    </style>
+    <title>테이블(표) 만들기</title>
+</head>
+<body>
+    <!-- table 태그는 표의 시작과 끝을 알려주는 태그입니다. -->
+    <table>
+        <!-- 표의 제목을 표시합니다. -->
+        <caption>음료 메뉴</caption>
+        <!-- thead,tbody,tfoot : 웹 접근성을 위한 head,body,foot표시 -->
+        <thead>
+            <!-- tr(table row) : 표의 행을 생성합니다. -->
+            <tr>
+                <!-- th(table header) : 테이블의 제목을 표시 -->
+                <th>번호</th>
+                <th>상품</th>
+                <th>수량</th>
+                <th>가격</th>
+                <th>세금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> 
+                <td>1</td>
+                <td>코카콜라</td>
+                <td>5개</td>
+                <td>1,400원</td>
+                <td>포함</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>칠성사이다</td>
+                <td>3개</td>
+                <!-- rowspan="갯수" 갯수만큼 행 합치기 -->
+                <td rowspan="2">1,000원</td>
+                <td>미포함</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>웰치스</td>
+                <td>2개</td>
+                <td>포함</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>총 금액</td>
+                <!-- colspan="갯수" 갯수만큼 열 합치기 -->
+                <td colspan="4">3,400원</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

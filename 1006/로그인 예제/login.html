@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            /* background-image: url("../../images/apple-iphone.png");
+            background-size: cover; */
+            width: 300px;
+            height: 500px;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        button {
+            color: white;
+            background-color: royalblue;
+            border: none;
+            border-radius: 4px;
+            width: 50px;
+            height: 30px;
+        }
+        #joinBtn {
+            margin-top: 10px;
+            width: 240px;
+        }
+        input {
+            margin: 3px;
+            box-sizing: border-box;
+            height: 30px;
+            text-align: center;
+            border: 1px solid royalblue;
+            border-radius: 4px;
+        }
+        .error {
+            color: red;
+            font-size: 0.5em;
+        }
+        #joinBtn:disabled {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div id = "container">
+        <div>
+            <label>
+                <input type="text" id="idInputBox" placeholder="아이디 입력">
+            </label>
+            <button type="button" onclick="id_check();">확인</button>
+            <div class="error"><p id="idError"></p></div>
+        </div>
+        <div>
+            <label>
+                <input type="password" id="pwInputBox" placeholder="패스워드 입력">
+            </label>
+            <button type="button" onclick="pw_check();">확인</button>
+            <div class="error"><p id="passwordError"></p></div>
+        </div>
+        <div>
+            <label>
+                <input type="text" id="emailInputBox" placeholder="이메일 입력">
+            </label>
+            <button type="button" onclick="email_check();">확인</button>
+            <div class="error"><p id="emailError"></p></div>
+        </div>
+        <div>
+            <label>
+                <input type="text" id="telInputBox" placeholder="전화번호 입력">
+            </label>
+            <button type="button" onclick="tel_check();">확인</button>
+            <div class="error"><p id="telError"></p></div>
+        </div>
+        <div>
+            <button type="button" id="joinBtn" onclick="join_submit()" disabled="disabled">가입 요청</button>
+        </div>
+    </div>
+    </form>
+
+    <script src="./style.js"></script>
+</body>
+</html>

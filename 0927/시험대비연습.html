@@ -1,0 +1,181 @@
+<!DOCTYPE html> <!-- [4] html 기본 구조 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- [1] 외부 스타일 시트 가져오기 -->
+    <link rel="stylesheet" href="style.css">
+    <title>시험 대비 연습</title>
+    <style>
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th {
+            background-color: orange;
+            color: white;
+        }
+        textarea {
+            vertical-align: middle;
+        }
+    </style>
+
+</head>
+<body> <!-- [2] html에서 화면에 출력할 태그와 script, 구문 등을 모두 작성할 수 있는 태그 -->
+    
+    <!-- [3] h 태그를 크기 순으로 h1 ~ h6 -->
+    <h1></h1> 
+    <h2></h2>
+    <h6></h6>
+
+    <!-- [5] <br> 태그는 페이지에서 줄바꿈을 할 때 사용 -->
+    <!-- <p> 태그는 본문에서 단락을 나눌 때 사용 -->
+    <p>안녕하세요. 오늘은 화요일 입니다. <br> 그리고 UI 디자인 시험을 치는 날입니다.</p>
+
+    <!-- [6] 페이지에서 사진을 출력할 때 사용하는 태그와 사용법 -->
+    <img src="파일의 경로" height="사진 높이 지정" width="사진 너비 지정" alt="이미지가 없을 때 출력할 내용">
+
+    <!-- [7] ul 태그 : 순서가 없는 목록을 표시할 때 사용. unorder list. -->
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <!-- [8] 순서가 있는 목록 태그에서 로마자(대문자)로 표시하는 방법 -->
+    <!-- type="I" (로마자 대문자) type="i" (로마자 소문자) type="A" (A~ 알파벳 대문자) a (a~ 알파벳 소문자)-->
+    <ol type="A">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <!-- [9] Block 속성과 Inline 속성에 대한 설명 -->
+    <!-- Block 속성 : 라인 전체를 차지하는 속성 -->
+    <!-- Inline 속성 : 요소의 영역만 차지하는 속성 -->
+
+    <!-- [10] 페이지를 이동하는 태그가 무엇이고 어떻게 사용하는지? a 태그 -->
+    <a href="이동할 주소">화면에 표시할 문구</a>
+
+    <!-- [11] 표를 표시하는 태그 무엇이고 사용법? -->
+    <!-- table 태그 -->
+    <table>
+        <tr> <!-- table row -->
+            <td></td> <!-- table data -->
+        </tr>
+    </table>
+
+    <!-- [12] colspan 속성 : 컬럼 병합 시 사용 -->
+    <!-- rowspan 속성 : 행 병합 시 사용 -->
+
+    <!-- [13] id 속성과 class 속성의 차이점 -->
+    <!-- id 속성 : 태그의 선택자로 사용되면 페이지 내에서 유일한 값이어야함 -->
+    <!-- class 속성 : 태그의 선택자로 사용되며 페이지 내에서 여러 태그에 중복 사용 가능 -->
+
+    <!-- [14] test.jpg 파일을 넓이 100px 높이 100px의 크기로 페이지에 출력하는 태그 작성 -->
+    <img src="test.jpg" width="100px" height="100px" alt="">
+
+    <!-- [15] h 태그, p 태그 쓰기 -->
+
+    <!-- [16] h 태그와 table 태그 사용 -->
+    <!-- 이름 나이 성별 -->
+    <h2>HTML Table</h2>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>나이</th>
+            <th>성별</th>
+        </tr>
+        <tr>
+            <td>이영지</td>
+            <td>21</td>
+            <td>여</td>
+        </tr>
+        <tr>
+            <td>안유진</td>
+            <td>20</td>
+            <td>여</td>
+        </tr>
+        <tr>
+            <td>미미</td>
+            <td>28</td>
+            <td>여</td>
+        </tr>
+    </table>
+
+    <!-- [17] ul 리스트 -->
+    <h2>HTML List</h2>
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>JavaScript</li>
+        <li>ajax</li>
+    </ul>
+
+    <!-- [18] e.f.g.h 순서로 넣기 -->
+    <h2>HTML List</h2>
+    <ol type="a" start="5">
+        <li>html</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>ajax</li>
+    </ol>
+
+    <!-- [19] input 태그의 여러가지 출력 형태를 묻는 문제 -->
+    <h2>HTML input</h2>
+    <input type="text" placeholder="아이디 입력"><br>
+    <select>
+        <option value="">제목</option>
+        <option value="">내용</option>
+        <option value="">작성자</option>
+    </select>
+    <input type="text" placeholder="검색어 입력"><br>
+    <input type="date">
+
+
+    <!-- 포트폴리오 문제 -->
+    <form>
+        <fieldset>
+            <legend>공지사항 작성하기</legend>
+            <p>
+                <label for="title">제목</label>
+                <input type="text" id="title" placeholder="제목을 입력하세요">
+            </p>
+            <p>
+                <label for="contents">내용</label>
+                <textarea name="" id="contents" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <label for="uploadFile"> 첨부파일
+                    <input type="file">
+                </label>
+            </p>
+            <p>
+                <button>작성하기</button>
+            </p>
+        </fieldset>
+    </form>
+    <hr>
+    <table>
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+            <th>조회수</th>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>공지사항 제목 9</td>
+            <td>작성자</td>
+            <td>작성일</td>
+            <td>조회수</td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+    </table>
+
+</body>
+</html>

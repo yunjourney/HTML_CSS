@@ -1,0 +1,42 @@
+
+section {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* em단위는 반응형 웹에서 유용 */
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1em;
+}
+p {
+    padding-top: 15px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+article {
+    float: left;
+    font-size: small;
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    clear: left;
+    width: 95.8%;
+    height: 50px;
+    background-color: #222;
+    margin-left: 10px;
+}
+
+footer > p {
+    color: #eee;
+    font-size: 0.9em;
+    text-align: center;
+}

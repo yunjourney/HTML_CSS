@@ -1,0 +1,23 @@
+body {
+    background: url(./images/mbg0.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background: url(./images/mbg1.jpg) no-repeat fixed;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        background: url(./images/mbg2.jpg) no-repeat fixed;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 320px) {
+    body {
+        background: url(./images/mbg3.jpg) no-repeat fixed;
+        background-size: cover;
+    }
+}

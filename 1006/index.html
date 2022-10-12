@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            width: 5000px;
+            height: 5000px;
+        }
+        /* button {
+            position: fixed;
+            left: 10px;
+            top: 10px;
+        } */
+    </style>
+</head>
+<body>
+    <!-- <p>클릭</p> -->
+
+    <!-- <input type="text"> -->
+
+    <!-- <a href="https://www.naver.com">네이버 이동</a>
+    <a href="https://www.daum.net">다음 이동</a> -->
+
+    <!-- <p>text-1</p>
+    <p>text-2</p>
+    <p>text-3</p> -->
+
+    <!-- <button onclick="printInfo()">window 객체 속성</button> -->
+
+    <!-- <button onclick="popup()">pop-up</button> -->
+
+    <button onclick="sTo()">scrollTo(100, 200)</button>
+    <button onclick="sBy()">scrollBy(100, 200)</button>
+
+    <script>
+        // const btnEl = document.querySelector("p");
+        // // callback함수 익명의 함수 한번만 호출되고 끝남
+        // btnEl.addEventListener("click", function(e) {
+        //     console.log(`clientX : ${e.clientX}`); // 마우스가 클릭된 X 좌표
+        //     console.log(`clientY : ${e.clientY}`);
+        //     console.log(`pageX : ${e.pageX}`); // 마우스가 클릭된 X좌표(수평스크롤포함)
+        //     console.log(`pageY : ${e.pageY}`);
+        //     console.log(`screenX : ${e.screenY}`);
+        //     console.log(`screenY : ${e.screenY}`);
+        // }); // 비동기적처리를 해야됨. 싱글스레드밖에없어서 콜백으로 처리
+
+        // const inputEl = document.querySelector("input"); // keydown : 키보드 자판이 눌려지면
+        // inputEl.addEventListener("keydown", function(e) { 
+        //     console.log(`keyCode : ${e.keyCode}`);
+        //     console.log(`ctrlKey : ${e.ctrlKey}`);
+        //     console.log(`altKey : ${e.altKey}`);
+        //     console.log(`shiftKey : ${e.shiftKey}`);
+        // }); 
+
+        // const aEls = document.querySelectorAll("a");
+        // for(let i = 0; i < aEls.length; i++) {
+        //     aEls[i].addEventListener("click", function(e) {
+        //         e.preventDefault(); // 기본 이벤트를 취소해줌
+        //     });
+        // }
+
+        // const pEls = document.querySelectorAll("p");
+        // pEls.forEach((el) => {
+        //     el.addEventListener("click", function() {
+        //         // this(자기자신 호출당하는 입장)에는 이벤트가 발생한 html이 this로 잡힘
+        //         if(this.style.color === "red") {
+        //             this.style.color = "black";
+        //         } else {
+        //             this.style.color = "red";
+        //         }
+        //     })
+        // });
+
+        // function printInfo() {
+        //     console.log(`웹 브라우저의 너비(innerWidth): ${window.innerWidth}`);
+        //     console.log(`웹 브라우저의 높이(innerHeight): ${window.innerHeight}`);
+        //     console.log(`웹 브라우저 창의 너비(outerWidth): ${window.outerWidth}`);
+        //     console.log(`웹 브라우저 창의 높이(outerHeight): ${window.outerHeight}`);
+        //     console.log(`웹 브라우저 창 위쪽 면과 모니터 사이의 간격(screenTop,screenY): ${window.screenTop}/${window.screenY}`);
+        //     console.log(`웹 브라우저 창 왼쪽 면과 모니터 사이의 간격(screenLeft,screenX): ${window.screenLeft}/${window.screenX}`);
+        //     console.log(`웹 브라우저 창의 스크롤 가로 위치(scrollX): ${window.scrollX}`);
+        //     console.log(`웹 브라우저 창의 스크롤 세로 위치(scrollY): ${window.scrollY}`);
+        // }
+
+        // function popup() {
+        //     let popupWidth = 400;
+        //     let popupHeight = 300;
+        //     let popupX = (window.screen.width / 2) - (popupWidth / 2);
+        //     let popupY = (window.screen.height / 2) - (popupHeight / 2);
+        //     window.open("popup.html", "팝업", "status=no, height=" + 
+        //     popupHeight + ", width=" + popupWidth + ", left=" + popupX + ", top=" + popupY);
+        // }
+
+        // scrollTo() 웹 브라우저의 스크롤 위치를 고정 위치에서 특정 좌표로 이동
+        function sTo() {
+            // window.scrollTo(100, 200);
+            window.scrollTo({left:100, top:0});
+        }
+        // scrollBy() 웹 브라우저의 스크롤을 현재 위치에서 상대적 위치로 이동
+        function sBy() {
+            // window.scrollBy(100, 200);
+            window.scrollBy({left:100, top:200});
+        }
+    </script>
+</body>
+</html>

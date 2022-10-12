@@ -1,0 +1,33 @@
+li {
+    color: blue;
+}
+#special {
+    color: rgb(233, 126, 144);
+}
+.red {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+}
+/* 마우스를 버튼 위에 올렸을 때 */
+button:hover {
+    background-color : rgb(233, 126, 144);
+    color: black;
+}
+/* 버튼을 클릭했을 때 */
+button:active {
+    background-color : black;
+    color: rgb(233, 126, 144);
+}
+/* a의 속성중에서 해당하는 값만 설정 */
+a[href$=".com"] {
+    color:rgb(233, 126, 144);
+}
+h1 {
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+}
+p {
+    color: orangered;
+}

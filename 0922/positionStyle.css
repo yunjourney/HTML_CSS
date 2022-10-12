@@ -1,0 +1,20 @@
+#container {
+    background-color: lightgoldenrodyellow;
+    left: 20px;
+    top: 20px;
+    position: relative;
+    height: 500px;
+}
+div {
+    width: 100px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: orange;
+}
+
+.box {
+    background-color: royalblue;
+    position: sticky;
+    color: white;
+    top: 0px;
+}

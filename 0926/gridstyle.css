@@ -1,0 +1,20 @@
+.grid-container {
+    display: grid;
+    height: 100vh;
+    row-gap: 10px;
+    column-gap: 2px;
+    /* fr 가변길이 비율단위로 움직임 */
+    /* grid-template-columns: 3fr 1fr 2fr; */
+    /* grid-template-columns: repeat(3, 200px); */ /* 3열 200px씩 */
+    grid-template-columns: repeat(3, minmax(100px, 1fr)); /* 최소 100px이하로 안줄이고 1:1:1의 비율 */
+    grid-template-rows: 100px 1fr 100px;
+}
+
+.grid-item {
+    color: white;
+    background-color: royalblue;
+}
+
+.grid-item:nth-child(2n) {
+    background-color: orange;
+}

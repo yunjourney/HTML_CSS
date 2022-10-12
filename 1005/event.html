@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>이벤트</title>
+</head>
+<body>
+    <!-- <button onclick="clickEvent(100)">클릭</button> -->
+
+    <!-- <input id="input_box" type="text" onfocus="focusEvent()" onblur="blurEvent()"> -->
+
+    <button>클릭</button>
+    <script>
+        // function clickEvent(num) {
+        //     alert("click! " + num);
+        // }
+
+        // function focusEvent() {
+        //     let inputBox = document.querySelector("#input_box");
+        //     inputBox.style.background = "orange";
+        // }
+        // function blurEvent() {
+        //     let inputBox = document.querySelector("#input_box");
+        //     inputBox.style.background = "green";
+        // }
+
+        // const btnEl = document.querySelector("button");
+        // btnEl.onclick = () => alert("화살표 함수로 구현"); // 프로퍼티 리스너 방식
+
+        // const btnEl = document.querySelector("button");
+        // btnEl.addEventListener("click", function() {
+        //     alert("버튼을 눌렀습니다.")
+        // }); // 이벤트 리스너 방식 ("이벤트 종류", 이벤트 시작하면 실행될 내용)
+
+        const btnEl = document.querySelector("button");
+        const clickEvent = () => alert("화살표 함수로 버튼 클릭");
+        btnEl.addEventListener("click", clickEvent); // 방식 3
+    </script>
+</body>
+</html>

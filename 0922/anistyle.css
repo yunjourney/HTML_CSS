@@ -1,0 +1,87 @@
+/* 애니메이션 : CSS3에서 추가된 기능, transition 보다 정확하고 부드럽게 전환됨. 반복안주면 일회성 */
+/* @keyframes <키 프레임명>  */
+/* animation-name : <키 프레임명>; */
+/* animation-duration : <지속시간>; */
+/* div {
+    width: 100px;
+    height: 100px;
+    border-color: red;
+    animation-name: bgchange;
+    animation-duration: 5s;
+}
+
+@keyframes bgchange {
+    0% {background-color: red;}
+    25% {background-color: orange;}
+    50% {background-color: yellow;}
+    100% {background-color: green;}
+} */
+
+
+
+/* #container {
+    width: 500px;
+    margin: 20px auto;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 50px;
+}
+#box1 {
+    background-color: lightgreen;
+    border: 1px solid transparent;
+    animation-name: shape;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+#box2 {
+    background-color: purple;
+    border: 1px solid transparent;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shape {
+    from {
+        border: 1px solid transparent;
+    }
+    to {
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(45deg);
+    }
+} */
+
+
+
+/* animation-fill-mode : 애니메이션이 끝난 후 원래 상태로 돌아가지않고 현재 상태로 유지 */
+/* none : 실행 전 상태로 돌아감 */
+/* forwards : 종료시점의 스타일을 유지 */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    position: relative;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 500px;
+    }
+}

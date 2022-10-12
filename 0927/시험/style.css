@@ -1,0 +1,42 @@
+#container {
+    width: 770px;
+    margin: 0 auto;
+}
+
+textarea {
+    vertical-align: middle;
+}
+
+label {
+	display: inline-block;
+	text-align: center;
+	width: 70px;
+	font-weight: bold;
+}
+
+.btn {
+    text-align: center;
+    width: 350px;
+}
+
+hr {
+    margin: 20px auto;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+.th1, .th2 {
+    color: white;
+    background-color: lightsalmon;
+    text-align: center;
+}
+
+.th1 th {
+    padding: 10px;
+}
+
+td {
+    background-color: beige;
+}
